@@ -1,3 +1,4 @@
+# FULL MARKS
 def weird_sum(n):
     if n == 0:
         return 0 
@@ -5,3 +6,4 @@ def weird_sum(n):
         return n + weird_sum(n - 2)
 
 print(weird_sum(5))
+# RecursionError as base case is never met

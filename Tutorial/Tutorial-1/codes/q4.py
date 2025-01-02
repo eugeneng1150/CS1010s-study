@@ -1,5 +1,5 @@
 x, y = 1, 4
-x, y = y, x
+x, y = y, x #4,1
 
 def ding(x):
     if x % 2 == 1:
@@ -11,7 +11,14 @@ def ding(x):
     else:
         print("This question sucks")
 
-ding(x)
-ding(y)
-ding(9)
-print(ding(3))  # what happens here?
+ding(x) # since there is a print statement in the funciton ding(x), 'okay' is printed
+# Awesome is printed too
+
+ding(y) # awesome is printed
+## Alright
+## This question sucks
+
+ding(9) # aright is printed
+print(ding(3))  # error is thrown
+## ding(3) will print "Alright" and "This question sucks" 
+## then it will print none
