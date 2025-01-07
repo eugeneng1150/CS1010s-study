@@ -11,7 +11,7 @@
  - Terminating condition
 - Recursive Case
  - Function that calls itself to solve a similar but simpler problem
-![Recursion for expoentiation](Notes on topics/Recursion for exponentiation.jpg)
+![Recursion for expoentiation](Recursion for exponentiation.jpg)
 Note that base case is m == 0 which outputs return 1
 
 # Recursive Stack vs Recursive Tree
