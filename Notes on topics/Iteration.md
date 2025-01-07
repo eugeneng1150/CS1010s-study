@@ -11,7 +11,7 @@
  - Terminating condition
 - Recursive Case
  - Function that calls itself to solve a similar but simpler problem
-![Recursion for expoentiation][Notes on topics/Recursion for exponentiation.jpg]
+![Recursion for expoentiation](Notes on topics/Recursion for exponentiation.jpg)
 Note that base case is m == 0 which outputs return 1
 
 # Recursive Stack vs Recursive Tree
@@ -68,10 +68,10 @@ def fibonacci(n):
 For `fibonacci(4)`, the recursive tree looks like this:
 
 ```
-          fibonacci(4)
-         /            \
-    fibonacci(3)     fibonacci(2)
-    /      \           /      \
+               fibonacci(4)
+         /                   \
+    fibonacci(3)             fibonacci(2)
+    /      \                      /      \
 fibonacci(2) fibonacci(1) fibonacci(1) fibonacci(0)
  /      \
 fibonacci(1) fibonacci(0)
