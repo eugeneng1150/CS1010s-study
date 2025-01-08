@@ -7,6 +7,22 @@
 - flowchart
 - concept map
 - programming pattern
+- Common Techniques
+ - 1) Guess and Check
+ - 2) Connecting the dots
+  - Finding connections between one input and the next
+ - 3) Exploration
+  - Start with a series of relevant inputs
+  - Find the relationship between outputs from the relevant inputs 
+   - Difference (+ or -)
+   - Ratio (* or /)
+   - Remainder (% or //)
+  - Find the operation to TRANSFORM an input to its RELEVANT input
+![exploration](Notes_on_topics\exploration.jpg)
+![exploration](Notes_on_topics\exploration_2.jpg)
+
+ - 4) Programming Patterns
+  - Using common patterns from previous problems
 
 3) Write your program
 - have a clear picture of what Python construct to ouse
@@ -34,3 +50,11 @@
 - Arithmetic error (eg ZeroDivisionError)
 - Undeclared variables
 - Syntax error
+- Statements after returns will not excute
+- Infinite loop 
+ - Especially in recursion if base case is never met
+
+## Debugging techniques
+- Print intermediate values
+
+
