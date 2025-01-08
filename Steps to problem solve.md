@@ -23,6 +23,7 @@
 ![exploration](Notes%20on%20topics/exploration.jpg)
 ![exploration](Notes%20on%20topics/exploration_2.jpg)
 
+
    - 4) **Programming Patterns**
      - Using common patterns from previous problems
 
