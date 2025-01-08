@@ -9,8 +9,10 @@
 - programming pattern
    **Common Techniques**  
    - 1) **Guess and Check**
+
    - 2) **Connecting the dots**
      - Finding connections between one input and the next
+     
    - 3) **Exploration**
      - Start with a series of relevant inputs
      - Find the relationship between outputs from the relevant inputs 
@@ -25,7 +27,7 @@
      - Using common patterns from previous problems
 
 3. **Write your program**
-   - have a clear picture of what Python construct to ouse
+   - have a clear picture of what Python construct to use
    - have a clear picture of how to connect the elements
    - translate into Python code
 
