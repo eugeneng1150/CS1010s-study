@@ -5,6 +5,20 @@
 - Body:
   - Accumulate the result
   - Modify the condition variable inside the loop, especially using while loop
+## For loops
+- range(start, stop, step ) 
+ - start step if undefined, starts from 0
+ - stop step is non inclusive
+ - For loops are more convenient than a while loop when as sequence is readily available
+
+![continue_py](continue_py.jpg)
+ - Sometimes we want to SKIP the ENTIRE code block inside the loop and continue with the next iteration
+  - Skips the Remaining Code Block:
+   - It immediately stops executing any lines of code that come after it in the current iteration.
+  - Returns to the Start of the Next Iteration:
+   - It jumps to the top of the loop and starts the next iteration, checking the loop condition again.
+ - break statement is used to terminate the loop 
+
 
 # Recursion 
 - Base Case
