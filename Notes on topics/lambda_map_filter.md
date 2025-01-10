@@ -9,6 +9,6 @@
 - Mapping means applying a given function f, element wise to a given sequence
 
 - The result is a sequence obtained by applying f to each element of seq
-![Map examples](Notes%20on%20topics/images/map_examples.jpg)
+![Map examples](images/map_examples.jpg)
 
 
