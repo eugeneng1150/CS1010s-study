@@ -20,8 +20,8 @@
        - Ratio (* or /)
        - Remainder (% or //)
      - Find the operation to TRANSFORM an input to its RELEVANT input
-![exploration](Notes%20on%20topics/exploration.jpg)
-![exploration](Notes%20on%20topics/exploration_2.jpg)
+![exploration](Notes%20on%20topics/image/exploration.jpg)
+![exploration](Notes%20on%20topics/image/exploration_2.jpg)
 
 
    - 4) **Programming Patterns**
