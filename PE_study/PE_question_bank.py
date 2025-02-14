@@ -167,8 +167,15 @@ def interleave(s1,s2,k):
         s2 = s2[k:]
         return new + interleave(s1,s2,k)
     
-# Count pairs in a string
-
+# Count pairs in a string (slice a string during recursion)
+def num_pair_rec(s):
+    if len(s) < 2:
+        return 0
+    else:
+        if s[0] != s[1]:
+            return num_pair_rec(s[1:]) 
+        else:
+            return 1 + num_pair_rec(s[1:]) # note the +1
 
 ################################################################################
 # int PATTERNS
