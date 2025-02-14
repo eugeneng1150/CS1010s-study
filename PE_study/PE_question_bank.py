@@ -251,16 +251,39 @@ def area(n):
     else:
         return area(n-1) * 0.75 # main idea is to remember to add operations at return function
     
+def exponential(x , n):
+    if n ==0:
+        return 1
+    elif n % 2 == 0 :
+        rec = exponential(x , n // 2)
+        return rec * rec
+    else:
+        rec = exponential(x , n // 2)
+        return rec * rec * x
+    
+# How to reverse a string though recursion
+def reverse_rec(s):
+    if s == "":
+        return ""
+    else:
+        return s[-1] + reverse_rec(s[:-1])
+print("reverse_rec test: ", reverse_rec("ABCDEF"))
+    
 
 
 
 
 ################################################################################
-# OTHER PATTERNS
+# NOTES 
 ################################################################################
+# Integer operations:
+# n - 1 , n // 2, n // 10, n // m
+# use % to get last digit
+# use // to isolate front few digits
 
-# WHAT ABOUT OTHER NON-str and NON-int PATTERNS?!
-
-# REMEMBER THAT YOU CAN ALSO CREATE YOUR OWN CATEGORIES!
+# Sequence operations:
+# s[1:] or s[:-1] # remove 1
+# s [1:-1] remove edges
+# often seq[1:] is paired with s[0]
 
 ################################################################################
