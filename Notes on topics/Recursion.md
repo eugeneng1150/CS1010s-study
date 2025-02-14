@@ -12,6 +12,7 @@ Linear recursion is the simplest form of recursion where a function makes exactl
 - Each recursive call works on a smaller version of the same problem
 - Generally has O(n) space complexity due to the call stack
 - Typically has O(n) time complexity
+- Can call itself within the loop, not just at the return statement
 
 ### Example: Computing Sum
 ```python

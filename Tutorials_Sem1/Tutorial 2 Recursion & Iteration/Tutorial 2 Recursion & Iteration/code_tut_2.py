@@ -1,12 +1,12 @@
-# def sum_even_factorial(n):
-#     if n <= 1:
-#         return 1
-#     else:
-#         if n % 2 == 0:
-#             return n * sum_even_factorial(n-1)
-#         else:
-#             sum_even_factorial(n-1)
-# print(sum_even_factorial(6))
+def sum_even_factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        if n % 2 == 0:
+            return n * sum_even_factorial(n-1)
+        else:
+            sum_even_factorial(n-1)
+print(sum_even_factorial(6))
 
 
 def star_wars_function_iter(n):
