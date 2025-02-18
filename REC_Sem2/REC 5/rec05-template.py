@@ -31,7 +31,7 @@ t1 = (2,3,4)
 t2 = (5,6,7)
 t3 = (1,2,3)
 t4 = (9,8,7)
-print(t4[:10])
+print(t4[:10]) # note that no error shown
 empty = ()
 new = ((t1 , t2) , (t3 , t4))
 print(new)
