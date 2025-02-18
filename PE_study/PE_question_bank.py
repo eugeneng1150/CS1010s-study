@@ -146,6 +146,7 @@ def count_first_seq_rec(text):
         return 1 + count_first_seq_rec(text[1:])
 print("Count first seq test: ", count_first_seq_rec("AAAB"))
 print()
+
 # How to reduce many alphabet into numbers like A5B4
 def run_length_rec(text):
     if len(text) == 0:
@@ -227,7 +228,7 @@ def count(main, sub):
         remainder = main - sub
         if remainder % (10 ** length_of_sub) == 0:
             res += 1
-        main = main // 10
+        main = main // 10 # remember to fit main variable back to loop
     return res
 print("count test:", count(121212 , 121))
 
