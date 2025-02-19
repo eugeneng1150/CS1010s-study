@@ -1,6 +1,26 @@
 # Map
-- Python built in map function does not return a tuple but an iterator, means you have to convert it to 
-a tuple manually
+
+## How `map()` Works
+- `map(function, iterable)` returns a **lazy iterator**.
+- The function inside `map()` **is not executed immediately**.
+- The function runs **only when the iterator is consumed**.
+
+## Ways to Ensure `map()` Executes
+
+### 1. Convert `map()` to a List or Tuple (Forces Execution)
+```python
+result = list(map(get_matric, cls))  # get_matric executes for each item in cls
+```
+### 2. Using a for loop 
+```python
+for item in map(get_matric, cls):
+    print(item)  # get_matric executes for each item
+```
+#### ✅ map() works without list(), but you must consume the iterator
+#### ✅ If you don’t iterate over the map object, nothing happens
+-------------------------------------------------------------------------------------------------------------------------------
+
+
 ```python
 result = map(square, [1, 2, 3, 4])
 print(result)  
