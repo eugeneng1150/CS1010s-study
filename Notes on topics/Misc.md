@@ -1,4 +1,5 @@
 # Learning points from papers
+## NEVER FORGET 'NONE' BEING PRINTED IF IT RETURNS NOTHING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 1) is vs ==
 ```python
 a = (1,2)
@@ -35,14 +36,20 @@ for item in y:
 # z = (2,(1,2), (1,2))
 
 z += x 
-print(z) # z = (2, (1,2), (1,2), (1,2))
+print(z) # z = (2, (1,2), (1,2), 1,2) 
+# note how z looks like
+# z += x unpacks x = (1,2) and appends 1 and 2 as separate elements.
+# To Keep x as a Single Tuple Element
+# Use z += (x,) instead.
+# This would make z = (2, (1,2), (1,2), (1,2)), treating x as one entity.
 print(y in z)
 # False 
 # Since y = (2, (1, 2), (1,2)) and z = (2, (1,2), (1,2), (1,2))
 # y is not a SINGLE ELEMENT OF Z hence output False
 print(x in z[2:len(z):1])
 ```
-
+- z += x → Unpacks x and adds its elements.
+- z += (x,) → Keeps x as a single tuple inside z.
 ```python
 a = (1, 2, 3)
 b = (8, 9)
@@ -68,6 +75,14 @@ print(course[1:-2:1] * 2) # (1,0,1,0)
 # since course[1:-2:1] produces (1,0) 
 # Takeaway is that if we take more than 1 element from a tuple, it produces another tuple and not a single element
 # Note that -2 is excluded, hence we stop one before -2 
+```
+```python
+course = ("CS",1,0,10,"S")
+print(course[1:0:-10] ) # even though the skip step is out of range, it still takes the first value
+```
+```python
+course = ("CS",1,0,10,"S")
+print(course[::-1][course[2]]) # evaulate the right hand side first then at the end go from Left to Right
 ```
 
 6) Scope (Global vs Local Scope)
