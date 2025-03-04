@@ -67,6 +67,18 @@ b = (b, b) # b = ((8,9), (8,9))
 print(b in b)
 # False as reason as ^ 
 ```
+### 14. Keeping distinct group inside one big tuple
+Start with empty structure and insert them dynamically
+```python
+big_group = ()
+tuple1 = (1,2,3)
+tuple2 = (4,5,6)
+big_group += (tuple1,)  # Adding group1
+big_group += (tuple2,)  # Adding group2
+# ^^ note that even though tuple2 is the last group, to keep them distinct still add the , behind
+print(big_group)
+# Output: ((1, 2, 3), (4, 5, 6))
+```
 
 5) String and tracing
 ```python
